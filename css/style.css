@@ -1,0 +1,59 @@
+@import './variaveis/cores.css';
+
+body {
+    margin: 0px;
+    background-color: #111111;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 400px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tela {
+    grid-column: span 4;
+    height: 50px;
+    font-size: 38px;
+    color: #fff;
+    background-color: #111111;
+    border: none;
+    text-align: right;
+}
+
+.botao {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.botao-0 {
+    border-radius: 100px;
+    border: none;
+    grid-column: span 2;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .div {
+        max-width: 100px;
+    }
+    .tela {
+        font-size: 30px;
+    }
+
+    .botao {
+        width: 80px;
+        height: 80px;
+    }
+}

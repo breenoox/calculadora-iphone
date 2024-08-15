@@ -1,0 +1,38 @@
+:root {
+    --branco: #ffffff;
+    --cor-amarela-opacidade: rgba(255, 187, 0, 0.9); 
+    --cor-amarela: rgba(255, 187, 0);
+    --cor-cinza-claro-opacidade: rgba(102, 102, 102, 0.5);;
+    --cor-cinza-claro: rgba(102, 102, 102);
+    --cor-cinza-escuro-opacidade:rgba(240, 240, 240, 0.8);
+    --cor-cinza-escuro: rgba(240, 240, 240);
+}
+
+.botao-amarelo {
+    background-color: var(--cor-amarela-opacidade);
+    color: var(--branco);
+}
+
+.botao-amarelo:hover {
+    background-color: var(--cor-amarela);
+    transition: 0.2s;
+}
+
+.botao-cinza {
+    background-color: var(--cor-cinza-claro-opacidade);
+    color: var(--branco);
+}
+
+.botao-cinza:hover {
+   background-color: var(--cor-cinza-claro);
+   transition: 0.2s;
+}
+
+.botao-cinza-escuro {
+    background-color: var(--cor-cinza-escuro-opacidade);
+}
+
+.botao-cinza-escuro:hover {
+    background-color: var(--cor-cinza-escuro);
+    transition: 0.2s;
+}
