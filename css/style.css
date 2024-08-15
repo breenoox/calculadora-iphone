@@ -51,11 +51,15 @@ body {
     .botao {
         height: 80px;
         width: 80px;
-        font-size: 16px;
+        font-size: 22px;
+    }
+
+    .botao-0 {
+        font-size: 22px;
     }
 
     .tela {
-        font-size: 18px;
+        font-size: 22px;
     }
 }
 
@@ -63,10 +67,5 @@ body {
     .botao {
         height: 60px;
         width: 60px;
-        font-size: 14px;
-    }
-
-    .tela {
-        font-size: 16px;
     }
 }
