@@ -9,12 +9,11 @@ body {
     align-items: center; 
 }
 
-div {
+.container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 400px;
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    justify-content: center;
+    max-width: 90vw;
 }
 
 .tela {
@@ -27,54 +26,47 @@ div {
     text-align: right;
 }
 
+.botao-0 {
+    grid-column: span 2;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+}
+
 .botao {
     text-decoration: none;
-    width: 100px;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
     height: 100px;
-    border-radius: 100px;
-    border: none;
-    font-size: 30px;
+    width: 100px;
+    font-size: 32px;
     cursor: pointer;
 }
 
-.botao-0 {
-    border-radius: 100px;
-    border: none;
-    grid-column: span 2;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-@media (max-width: 500px) {
-    .tela {
-        font-size: 30px;
+@media (max-width: 600px) {
+    .botao {
+        height: 80px;
+        width: 80px;
+        font-size: 16px;
     }
 
-    .botao {
-        width: 80px;
-        height: 80px;
+    .tela {
+        font-size: 18px;
     }
 }
 
 @media (max-width: 400px) {
-    body {
-        height: 70vh;
-        align-items: flex-end;
-    }
-    .tela {
-        height: auto;
-        font-size: 23px;
-        padding: 0px;
-    }
-
     .botao {
-        width: 60px;
         height: 60px;
-        font-size: 23px;
-        text-align: center;
+        width: 60px;
+        font-size: 14px;
     }
 
-    .botao-0 {
-        font-size: 23px;
+    .tela {
+        font-size: 16px;
     }
 }
