@@ -60,6 +60,10 @@ div {
 }
 
 @media (max-width: 400px) {
+    body {
+        height: 80vh;
+        align-items: flex-end;
+    }
     .div {
         max-width: 100px;
     }
@@ -72,5 +76,7 @@ div {
     .botao {
         width: 70px;
         height: 70px;
+        font-size: 23px;
+        text-align: center;
     }
 }
