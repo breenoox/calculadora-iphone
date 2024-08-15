@@ -1,5 +1,6 @@
 :root {
     --branco: #ffffff;
+    --preto: #000000;
     --cor-amarela-opacidade: rgba(255, 187, 0, 0.9); 
     --cor-amarela: rgba(255, 187, 0);
     --cor-cinza-claro-opacidade: rgba(102, 102, 102, 0.5);;
@@ -30,6 +31,7 @@
 
 .botao-cinza-escuro {
     background-color: var(--cor-cinza-escuro-opacidade);
+    color: var(--preto);
 }
 
 .botao-cinza-escuro:hover {

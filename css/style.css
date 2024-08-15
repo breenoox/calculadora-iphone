@@ -19,7 +19,7 @@ div {
 
 .tela {
     grid-column: span 4;
-    height: 50px;
+    height: auto;
     font-size: 38px;
     color: #fff;
     background-color: #111111;
@@ -28,6 +28,7 @@ div {
 }
 
 .botao {
+    text-decoration: none;
     width: 100px;
     height: 100px;
     border-radius: 100px;
@@ -55,5 +56,21 @@ div {
     .botao {
         width: 80px;
         height: 80px;
+    }
+}
+
+@media (max-width: 400px) {
+    .div {
+        max-width: 100px;
+    }
+    .tela {
+        height: auto;
+        font-size: 23px;
+        padding: 0px;
+    }
+
+    .botao {
+        width: 70px;
+        height: 70px;
     }
 }
