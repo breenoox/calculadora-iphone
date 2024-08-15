@@ -46,9 +46,6 @@ div {
 }
 
 @media (max-width: 500px) {
-    .div {
-        max-width: 100px;
-    }
     .tela {
         font-size: 30px;
     }
@@ -61,11 +58,8 @@ div {
 
 @media (max-width: 400px) {
     body {
-        height: 80vh;
+        height: 70vh;
         align-items: flex-end;
-    }
-    .div {
-        max-width: 100px;
     }
     .tela {
         height: auto;
@@ -74,9 +68,13 @@ div {
     }
 
     .botao {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         font-size: 23px;
         text-align: center;
+    }
+
+    .botao-0 {
+        font-size: 23px;
     }
 }
