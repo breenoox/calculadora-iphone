@@ -67,5 +67,10 @@ body {
     .botao {
         height: 60px;
         width: 60px;
+        font-size: 18px;
+    }
+
+    .botao-0 {
+        font-size: 18px;
     }
 }

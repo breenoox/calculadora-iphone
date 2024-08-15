@@ -2,15 +2,15 @@ function adicionarNumero(numero) {
     const teste = document.getElementById('tela').value += numero;
 }
 
-function adicionarOperacao(operacao) {
-    const tela = document.getElementById('tela').value;
-        if (tela !== '' && !isOperacao(tela.slice(-1))) {
-            document.getElementById('tela').value += operacao;
-        }
+function simboloOperacao(c) {
+    return ['+', '-', '*', '/',].includes(c);
 }
 
-function isOperacao(char) {
-    return ['+', '-', '*', '/',].includes(char);
+function adicionarOperacao(operacao) {
+    const tela = document.getElementById('tela').value;
+        if (tela !== '' && !simboloOperacao(tela.slice(-1))) {
+            document.getElementById('tela').value += operacao;
+        }
 }
 
 function adicionarOperacaoPorcentagem() {
